@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://i63hijrb7ylh"]
+
+[node name="Node2D" type="Node2D" unique_id=862262925]
+
+[node name="giigigiagoassa" type="Node2D" parent="." unique_id=342649642]
