@@ -1,5 +1,11 @@
 [gd_scene format=3 uid="uid://i63hijrb7ylh"]
 
+[ext_resource type="Texture2D" uid="uid://dfxsi871cvtwb" path="res://assets/huss-huss-huss-huss-valley.png" id="1_wtcfe"]
+
 [node name="Node2D" type="Node2D" unique_id=862262925]
 
 [node name="giigigiagoassa" type="Node2D" parent="." unique_id=342649642]
+
+[node name="HussHussHussHussValley" type="Sprite2D" parent="." unique_id=503375357]
+position = Vector2(433, 226)
+texture = ExtResource("1_wtcfe")
