@@ -17,13 +17,58 @@
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"Neutral": {
+"Ew": {
 "export_overrides": {
-"image": "\"res://assets/placeholder2.png\""
+"image": "\"res://assets/sophie assets/sophie_disg.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 0.9,
+"scale": 1,
+"scene": ""
+},
+"Hmpf": {
+"export_overrides": {
+"image": "\"res://assets/sophie assets/sophie_hmpf.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Mr Anime": {
+"export_overrides": {
+"image": "\"res://assets/sophie assets/sophie_100.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Neutral": {
+"export_overrides": {
+"image": "\"res://assets/sophie assets/sophie_neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"Shy": {
+"export_overrides": {
+"image": "\"res://assets/sophie assets/sophie_side.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Suprice": {
+"export_overrides": {
+"image": "\"res://assets/sophie assets/sophie_OH.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
 "scene": ""
 }
 },
