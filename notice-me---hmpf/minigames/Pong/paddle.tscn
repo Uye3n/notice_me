@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://fi30rye2ylsr"]
+
+[ext_resource type="Script" uid="uid://6avqq8uk7kh8" path="res://minigames/Pong/paddle.gd" id="1_042ox"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gc083"]
+size = Vector2(128, 526)
+
+[node name="paddle" type="CharacterBody2D" unique_id=1474162780]
+script = ExtResource("1_042ox")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1260689961]
+position = Vector2(-0.51968384, -1.2058754)
+scale = Vector2(1.007874, 1.9338236)
+polygon = PackedVector2Array(-61, -124, 66, -124, 66, 148, 2.4890137, 148, -61, 148.00002)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1625298023]
+position = Vector2(2, 22)
+shape = SubResource("RectangleShape2D_gc083")
