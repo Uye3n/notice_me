@@ -33,3 +33,7 @@ func _physics_process(delta):
 		var thing_we_hit = collision.get_collider()
 		if thing_we_hit.is_in_group("paddles") or thing_we_hit.is_in_group("border"):
 			velocity *= 1.05
+
+func stop():
+	position = get_viewport_rect().size / 2
+	speed = 0
