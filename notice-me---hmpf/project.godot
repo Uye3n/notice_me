@@ -21,8 +21,11 @@ Dialogic="*uid://ds2q0uclmolvu"
 [dialogic]
 
 directories/dch_directory={
+"jen": "res://character/jen.dch",
 "mr mysterious": "res://character/mr mysterious.dch",
-"pong": "res://character/pong.dch"
+"pati": "res://character/pati.dch",
+"pong": "res://character/pong.dch",
+"sophie": "res://character/sophie.dch"
 }
 directories/dtl_directory={
 "intro_sequence": "res://timelines/intro_sequence.dtl"
