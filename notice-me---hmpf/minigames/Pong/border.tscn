@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://5hq6tja31ol1"]
+
+[ext_resource type="Script" uid="uid://bybyj7n8gns22" path="res://minigames/Pong/border.gd" id="1_33a1f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_07orm"]
+size = Vector2(1175, 14)
+
+[node name="Border" type="CharacterBody2D" unique_id=1173578137]
+script = ExtResource("1_33a1f")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=548160953]
+position = Vector2(0, -12)
+scale = Vector2(42, 1)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(0, 0, 0, 14, 14.02946, 14, 28, 14, 28, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=72209149]
+position = Vector2(587.5, -5)
+shape = SubResource("RectangleShape2D_07orm")
