@@ -1,1 +1,51 @@
-[background arg="res://assets/locations/pong_classroom.png" fade="0.0"]
+[background arg="res://assets/locations/pong_classroom.png" fade="0.0" wait="true"]
+join pong right [animation="Slide In Up"]
+pong: O- oh oh.. du bist ja wirklich zum Clubraum gekommen
+pong: Warum bist du hier?
+- Ich wollte nur mit dir sprechen
+	set {Trust} += 10.0
+	pong: Mi- mi- mit mir? Über was wolltest du reden?
+	jump topic
+- Ich wollte über Kröten reden
+	set {Trust} -= 20.0
+	pong: ew.... lieber über etwas anderes
+	jump topic
+label topic
+- Gambling
+	set {Trust} += 10.0
+	pong: Was? ich liebe Gambling. Ich habe hier sogar eine Gambling Maschine. Möchtest du mal?
+	- Ja gerne
+		set {Trust} += 20.0
+		label gamblen
+		pong: Auf was möchtest du gamblen?
+		- Zitronen
+			set {Trust} += 20.0
+			pong: Ich wette auch immer auf Zitronen!! \:3
+			[signal arg="pong_minigame"]
+		- Kirschen
+			pong: Ouhhh, gut sieht anders aus.... da muss ich wohl los!
+			[end_timeline]
+	- Nah fuck no
+		set {Trust} -= 20.0
+		pong: Oh... hmpf
+		pong: .....möchtest du wirklich nicht gamblen?
+		- Kleines Späßchen. Natürlich möchte ich gamblen
+			set {Trust} += 20.0
+			jump gamblen
+- Spiele
+	set {Trust} += 10.0
+	pong: Oh? Was für Spiele magst du genau?
+	- Das Hitgame Dobble
+		set {Trust} += 20.0
+		[style name="excited_big_font"]
+		pong: O-O-O-O-O-OMG ICH LIEBE DOBBLE OMG OM G ICH HABE MEINEN TEAMMATE GEFUNDEN BITTE SPIEL MIT MIR BITTE BITTE BITTE BITTE BITTE BITTE BITTE BITTE BITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTEBITTE
+		[style name="test_style"]
+		[signal arg="pong_minigame"]
+	- Das Hitgame Risiko
+		set {Trust} -= 20.0
+		pong: Ew. Ich hasse Risiko. Es fühlt sich an, als wäre ich ein Adler, der versucht hat zu fliegen, den du versucht hast einzusperrt.
+		[end_timeline]
+- nasse Socken
+	set {Trust} -= 20.0
+	pong: Wieso willst du über nasse Socken reden du Sohn.
+	pong: Ich glaube du solltest gehen.

@@ -35,10 +35,11 @@ directories/dtl_directory={
 }
 layout/style_directory={
 "": "res://styles/test_style.tres",
+"excited_big_font": "res://styles/excited_big_font.tres",
 "test_style": "res://styles/test_style.tres"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://styles/test_style.tres"]
+layout/style_list=["res://styles/test_style.tres", "res://styles/excited_big_font.tres"]
 layout/default_style="res://styles/test_style.tres"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
@@ -72,7 +73,9 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
-variables={}
+variables={
+"Trust": 0
+}
 
 [display]
 
