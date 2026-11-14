@@ -1,3 +1,19 @@
 [gd_scene format=3 uid="uid://crcknb2ud18wb"]
 
-[node name="Ball" type="Node2D" unique_id=1035072028]
+[ext_resource type="Script" uid="uid://bk5lkpidx7cty" path="res://minigames/Pong/ball.gd" id="1_kjjpf"]
+[ext_resource type="Texture2D" uid="uid://bsb1f58l1bqn7" path="res://minigames/Pong/assets/pong_ball.png" id="2_wc6v2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_07orm"]
+radius = 27.294687
+
+[node name="Ball" type="CharacterBody2D" unique_id=1769301052]
+script = ExtResource("1_kjjpf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1114665484]
+scale = Vector2(0.12568997, 0.0971867)
+texture = ExtResource("2_wc6v2")
+offset = Vector2(50, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=764216830]
+position = Vector2(1, -2)
+shape = SubResource("CircleShape2D_07orm")

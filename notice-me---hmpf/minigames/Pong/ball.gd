@@ -25,15 +25,11 @@ func _physics_process(delta):
 		out_of_bounds.emit()
 		start()
 	
-	if position.y < 0 or position.y > get_viewport_rect().size.y:
-		out_of_bounds.emit()
-		start()
-	
 	var collision = move_and_collide(velocity * delta)
 	if collision:
 		velocity = velocity.bounce(collision.get_normal())
 		
 		# Add velocity each time ball hits a paddle
 		var thing_we_hit = collision.get_collider()
-		if thing_we_hit.is_in_group("paddles"):
+		if thing_we_hit.is_in_group("paddles") or thing_we_hit.is_in_group("border"):
 			velocity *= 1.05
