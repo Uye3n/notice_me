@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://fi30rye2ylsr" path="res://minigames/Pong/paddle.tscn" id="1_bj2r8"]
 [ext_resource type="Script" uid="uid://dntoaxgtwi3m" path="res://minigames/Pong/level.gd" id="1_vy58o"]
 [ext_resource type="PackedScene" uid="uid://crcknb2ud18wb" path="res://minigames/Pong/ball.tscn" id="3_3ceqp"]
+[ext_resource type="PackedScene" uid="uid://ikuthglngspr" path="res://minigames/Pong/ai_paddle.tscn" id="3_jjx86"]
 [ext_resource type="PackedScene" uid="uid://5hq6tja31ol1" path="res://minigames/Pong/border.tscn" id="4_3ceqp"]
 
 [node name="Level" type="Node2D" unique_id=1767117182]
@@ -16,7 +17,7 @@ color = Color(0, 0, 0, 1)
 [node name="P1" parent="." unique_id=1474162780 instance=ExtResource("1_bj2r8")]
 position = Vector2(50, 324)
 
-[node name="P2" parent="." unique_id=827327613 instance=ExtResource("1_bj2r8")]
+[node name="P2" parent="." unique_id=727526922 instance=ExtResource("3_jjx86")]
 position = Vector2(1101, 324)
 
 [node name="Ball" parent="." unique_id=1769301052 instance=ExtResource("3_3ceqp")]
@@ -32,7 +33,7 @@ position = Vector2(-8, 658)
 [node name="Divider" type="Polygon2D" parent="." unique_id=392589921]
 position = Vector2(14, -140.0064)
 scale = Vector2(1, 1.4021277)
-color = Color(0.101960786, 0.15294118, 0.54901963, 0.57254905)
+color = Color(0.87058824, 0.6117647, 0.72156864, 1)
 polygon = PackedVector2Array(569, 97, 569, 567, 554, 567, 554, 236, 554, 97)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1976108808]
