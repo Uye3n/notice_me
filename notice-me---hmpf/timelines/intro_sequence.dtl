@@ -15,7 +15,7 @@ label bock?
 "mr mysterious": ich lasse die anderen sich mal vorstellen.....
 "mr mysterious": ganz viel Spaß und viel Erfolg ദ്ദി( ˘̀ ֊ ˘́)
 [background arg="res://assets/school_hallway.png" fade="1.0" wait="true"]
-join pong leftmost [animation="Slide From Left" length="1.5"]
+join pong leftmost [animation="Slide In Up" length="2.5"]
 pong: Hey, ich bin Pong
 pong: Ich bin im Volleyball Club und mag gerne Games und Essen
 pong: aber du siehst nicht danach aus, als würde dich das interessieren........ (˶ ｰ̀ ⤙ｰ́ ˶)
@@ -23,3 +23,14 @@ pong: aber du siehst nicht danach aus, als würde dich das interessieren........
 - Oh das ist aber cool!
 - Ich mag deine Antenne aufm Kopf ♡( >ᴗ؂•̀ )
 	pong: Wa- wa- was? Wieso sollte ich... meine Antenne mögen *blush und wegschauen*
+join sophie rightmost [animation="Slide From Right" length="4.5"]
+sophie (Shy): (sophie stellt sich vor)
+join jen right [animation="Zoom In"]
+jen: (jen stellt sich vor)
+join pati left [animation="Bounce In"]
+pati: Yo ich bin Pati (֊⎚-⎚)
+"mr mysterious": Wowowowow, die Qual der Wahl, für wen entscheidest du dich für deinen ersten Talk? (¬ᴗ ´¬ )
+- Pong
+- Sophie
+- Jen
+- Pati
