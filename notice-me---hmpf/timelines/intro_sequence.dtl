@@ -1,0 +1,25 @@
+"mr mysterious": HALLIHALLO MEINE LIEBEN
+"mr mysterious": und willkommen
+"mr mysterious": zu unserem superkrassen Dating Game!! ᕙ(  •̀ ᗜ •́  )ᕗ
+"mr mysterious": hast du Bock? ( ᴗ̀ ̫ᴗ́ )
+label bock?
+- ja
+	"mr mysterious": ein bisschen mehr Enthusiasmus bitte.....
+	jump bock?
+- JAAAAAA
+	"mr mysterious": hey, sehr gut (˵ •̀ ᴗ - ˵ ) ✧
+"mr mysterious": du wirst gleich 4 quatschige Character zur Auswahl bekommen
+"mr mysterious": und darfst dann supersilly Dialoge führen
+"mr mysterious": und vielleicht......
+"mr mysterious": auf das ein oder andere spicy Date gehen (˵ ¬֊ ؂ ¬˵)
+"mr mysterious": ich lasse die anderen sich mal vorstellen.....
+"mr mysterious": ganz viel Spaß und viel Erfolg ദ്ദി( ˘̀ ֊ ˘́)
+[background arg="res://assets/school_hallway.png" fade="1.0" wait="true"]
+join pong leftmost [animation="Slide From Left" length="1.5"]
+pong: Hey, ich bin Pong
+pong: Ich bin im Volleyball Club und mag gerne Games und Essen
+pong: aber du siehst nicht danach aus, als würde dich das interessieren........ (˶ ｰ̀ ⤙ｰ́ ˶)
+- Mmmm okay?
+- Oh das ist aber cool!
+- Ich mag deine Antenne aufm Kopf ♡( >ᴗ؂•̀ )
+	pong: Wa- wa- was? Wieso sollte ich... meine Antenne mögen *blush und wegschauen*
