@@ -1,3 +1,4 @@
+[background arg="#040000ff" fade="0.0"]
 "mr mysterious": HALLIHALLO MEINE LIEBEN
 "mr mysterious": und willkommen
 "mr mysterious": zu unserem superkrassen Dating Game!! ᕙ(  •̀ ᗜ •́  )ᕗ
@@ -14,7 +15,7 @@ label bock?
 "mr mysterious": auf das ein oder andere spicy Date gehen (˵ ¬֊ ؂ ¬˵)
 "mr mysterious": ich lasse die anderen sich mal vorstellen.....
 "mr mysterious": ganz viel Spaß und viel Erfolg ദ്ദി( ˘̀ ֊ ˘́)
-[background arg="res://assets/school_hallway.png" fade="1.0" wait="true"]
+[background arg="res://assets/locations/school_hallway.png" fade="1.0" wait="true"]
 join pong leftmost [animation="Slide In Up" length="2.5"]
 pong: Hey, ich bin Pong
 pong: Ich bin im Volleyball Club und mag gerne Games und Essen

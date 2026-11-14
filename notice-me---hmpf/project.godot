@@ -30,7 +30,8 @@ directories/dch_directory={
 "sophie": "res://character/sophie.dch"
 }
 directories/dtl_directory={
-"intro_sequence": "res://timelines/intro_sequence.dtl"
+"intro_sequence": "res://timelines/intro_sequence.dtl",
+"pong1": "res://timelines/pong1.dtl"
 }
 layout/style_directory={
 "": "res://styles/test_style.tres",
