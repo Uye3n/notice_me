@@ -11,9 +11,9 @@ func _physics_process(delta):
 	var direction = 0
 	
 	if Input.is_action_pressed(up_action):
-		direction = -1
+		direction = -1.3
 	elif Input.is_action_pressed(down_action):
-		direction = 1
+		direction = 1.3
 	
 	velocity.y = direction * speed
 	move_and_collide(Vector2(0, velocity.y * delta))

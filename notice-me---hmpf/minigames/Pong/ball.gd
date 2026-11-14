@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 signal out_of_bounds
 
-@export var speed = 200
+@export var speed = 250
 
 # Reset ball's position and velocity
 func start():
@@ -31,8 +31,8 @@ func _physics_process(delta):
 		
 		# Add velocity each time ball hits a paddle
 		var thing_we_hit = collision.get_collider()
-		if thing_we_hit.is_in_group("paddles") or thing_we_hit.is_in_group("border"):
-			velocity *= 1.05
+		if thing_we_hit.is_in_group("paddles"):
+			velocity *= 1.2
 
 func stop():
 	position = get_viewport_rect().size / 2
