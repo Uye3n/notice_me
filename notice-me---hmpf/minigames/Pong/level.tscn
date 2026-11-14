@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://b1eby742ssmm1"]
+
+[ext_resource type="PackedScene" uid="uid://fi30rye2ylsr" path="res://minigames/Pong/paddle.tscn" id="1_bj2r8"]
+[ext_resource type="Script" uid="uid://dntoaxgtwi3m" path="res://minigames/Pong/level.gd" id="1_vy58o"]
+[ext_resource type="PackedScene" uid="uid://crcknb2ud18wb" path="res://minigames/Pong/ball.tscn" id="3_3ceqp"]
+[ext_resource type="PackedScene" uid="uid://5hq6tja31ol1" path="res://minigames/Pong/border.tscn" id="4_3ceqp"]
+
+[node name="Level" type="Node2D" unique_id=1767117182]
+script = ExtResource("1_vy58o")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=937926903]
+offset_right = 1151.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="P1" parent="." unique_id=1474162780 instance=ExtResource("1_bj2r8")]
+position = Vector2(50, 324)
+
+[node name="P2" parent="." unique_id=827327613 instance=ExtResource("1_bj2r8")]
+position = Vector2(1101, 324)
+
+[node name="Ball" parent="." unique_id=1769301052 instance=ExtResource("3_3ceqp")]
+top_level = true
+position = Vector2(576, 337)
+
+[node name="Border" parent="." unique_id=1173578137 instance=ExtResource("4_3ceqp")]
+position = Vector2(-4, -1)
+
+[node name="Border2" parent="." unique_id=267109085 instance=ExtResource("4_3ceqp")]
+position = Vector2(-8, 658)
+
+[node name="Divider" type="Polygon2D" parent="." unique_id=392589921]
+position = Vector2(14, -140.0064)
+scale = Vector2(1, 1.4021277)
+color = Color(0.101960786, 0.15294118, 0.54901963, 0.57254905)
+polygon = PackedVector2Array(569, 97, 569, 567, 554, 567, 554, 236, 554, 97)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1976108808]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1261709208]
+layout_mode = 3
+anchor_left = 0.499
+anchor_top = 0.102000006
+anchor_right = 0.499
+anchor_bottom = 0.102000006
+offset_left = -574.848
+offset_top = -66.096
+offset_right = 574.152
+offset_bottom = 65.904
+
+[node name="Player Score" type="Label" parent="CanvasLayer/Control" unique_id=566701469]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 235.0
+offset_top = 40.0
+offset_right = 283.0
+offset_bottom = 63.0
+scale = Vector2(2, 2)
+text = "Du: 0"
+
+[node name="Pong Score" type="Label" parent="CanvasLayer/Control" unique_id=1257582207]
+layout_mode = 0
+offset_left = 840.0
+offset_top = 40.0
+offset_right = 897.0
+offset_bottom = 63.0
+scale = Vector2(2, 2)
+text = "Pong: 0"
