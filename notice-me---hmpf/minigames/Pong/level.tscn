@@ -46,7 +46,7 @@ anchor_bottom = 0.102000006
 offset_left = -574.848
 offset_top = -66.096
 offset_right = 574.152
-offset_bottom = 65.904
+offset_bottom = 579.904
 
 [node name="Player Score" type="Label" parent="CanvasLayer/Control" unique_id=566701469]
 layout_mode = 1
@@ -66,3 +66,13 @@ offset_right = 897.0
 offset_bottom = 63.0
 scale = Vector2(2, 2)
 text = "Pong: 0"
+
+[node name="Win" type="Label" parent="CanvasLayer/Control" unique_id=51723498]
+visible = false
+layout_mode = 0
+offset_left = 362.0
+offset_top = 161.0
+offset_right = 506.0
+offset_bottom = 184.0
+scale = Vector2(3, 3)
+text = "Bla hat gewonnen!"
