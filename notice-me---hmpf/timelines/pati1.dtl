@@ -1,0 +1,25 @@
+[background arg="res://assets/screens/dayone.png" fade="3.0" wait="true"]
+[background arg="res://assets/locations/pati_room.png" fade="3.0" wait="true"]
+join pati (Neutral) right [animation="Bounce In"]
+pati (Neutral): Hey was geht, ich bin Pati
+pati (Neutral): Ich mag so Videospiele und leite auch den Game Club
+pati (NeuronActivation): In meiner Freizeit spiele ich lässige Gaming Soundtracks auf Klavier. Yo wusstest du? Ich bin Gamer oder sowas (˵ ¬ᴗ¬˵)
+pati (Neutral): Was machst du aber hier?
+- Ich wollte mit dir über das Hit Game Overtale reden.
+	set {Trust} += 40.0
+	[style name="excited_big_font"]
+	pati (geeked): OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG
+	[style name="shy_small_font"]
+	pati (NeuronActivation): Ich LIEBE das Hit Game Overtale
+	[signal arg="pati_minigame"]
+- ich wollte mit die über ein spezifisches Poster vom Film Mr. Joker reden
+	set {Trust} -= 20.0
+	pati (Angry): . . . . . .
+	pati (Angry): Jetzt gehts los
+	pati (Angry): Sofort raus.
+	[style name="excited_big_font"]
+	pati (Angry): RAUS
+	[clear time="1.0" music="false" background="false"]
+	leave pati [animation="Fade Out"]
+	jump pati2/
+	[style name="test_style"]

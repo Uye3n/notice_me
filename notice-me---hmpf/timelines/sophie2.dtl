@@ -1,4 +1,5 @@
-[background arg="res://assets/locations/school_roof.png" fade="0.0" wait="true"]
+[background arg="res://assets/screens/daytwo.png" fade="3.0" wait="true"]
+[background arg="res://assets/locations/school_roof.png" fade="3.0" wait="true"]
 join sophie (Shy) rightmost [animation="Slide From Right" length="4.5"]
 sophie (Neutral): Oh.. du auch wieder hier?
 sophie (Shy): Was machst du hier?
@@ -13,6 +14,7 @@ sophie (Shy): Was machst du hier?
 		sophie (Shy): K-könnte ich dich um einen Gefallen bitten?
 		sophie (Shy): M-m-mein Herz würde extrem doki doki gehen, wenn du meinen Kopf streicheln könntest........
 		sophie (Mr Anime): ( ๑ ˃̵ᴗ˂̵)و ♡
+		leave sophie [animation="Fade Out"]
 		[signal arg="sophie_minigame"]
 	- Lass über was anderes reden..
 		set {Trust} += 10.0
@@ -25,6 +27,7 @@ sophie (Shy): Was machst du hier?
 			[style name="test_style"]
 			sophie (Mr Anime): In einer Welt voller Lärm bist du mein Lieblingslied
 			sophie (Mr Anime): Du bist der beste Zufall, der mir je passiert ist und meine liebste Entscheidung zugleich!
+			leave sophie [animation="Fade Out"]
 			[signal arg="sophie_minigame"]
 		- Oh ja, ich hab dir zufälligerweise nen Karottenkuchen gemacht!
 			set {Trust} -= 20.0
@@ -34,7 +37,11 @@ sophie (Shy): Was machst du hier?
 			sophie (Ew): Ich habe noch nie...
 			sophie (Ew): Sowas ekelhaftes erlebt...
 			sophie (Ew): Ich HASSE Karotten..... nun ist mein Tag wegen dir versaut.
-			[end_timeline]
+			[clear time="1.0" music="false" background="false"]
+			leave sophie [animation="Fade Out"]
+			jump sophie3/
 - Ich wollte nur frische Luft schnappen
 	sophie (Hmpf): Oh.. na gut..
-	[end_timeline]
+	[clear time="1.0" music="false" background="false"]
+	leave sophie [animation="Fade Out"]
+	jump sophie3/

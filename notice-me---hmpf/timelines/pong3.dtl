@@ -1,10 +1,13 @@
-[background arg="res://assets/locations/pong_classroom.png" fade="0.0" wait="true"]
+[background arg="res://assets/screens/daythree.png" fade="3.0" wait="true"]
+[background arg="res://assets/locations/pong_classroom.png" fade="3.0" wait="true"]
 join pong (Shy) right [animation="Slide In Up"]
 pong (Hmpf): Und hier bist du ja wieder ( ˶ˆᗜˆ˵ )
 pong (Hmpf): W-w-was fällt dir heute so ein?
 - Ich habe extra für dich eine nasse Socke gebracht
 	set {Trust} -= 20.0
 	pong (Gulp): Was... wieso tust du sowas..............
+	[clear time="1.0" music="false" background="false"]
+	leave pong [animation="Fade Out"]
 	[end_timeline]
 - Ich hab dir ein Glas Pesto mitgebracht
 	set {Trust} += 20.0
@@ -16,9 +19,14 @@ pong (Hmpf): W-w-was fällt dir heute so ein?
 		pong (Shy): Ich muss dir etwas beichten.....
 		[style name="test_style"]
 		pong (Hmpf): I-i-i-i-ich habe mich in disch verliebt
+		[clear time="1.0" music="false" background="false"]
+		leave pong [animation="Fade Out"]
 		[end_timeline]
 	- Natürlich nur grünes für disch, das steht für die Natur
 		set {Trust} -= 10.0
 		pong (Hmpf): ...
 		pong (Gulp): Ich glaube, das wird nichts...
 		pong (Gulp): Aber wir können gerne... später was machen
+		[clear time="1.0" music="false" background="false"]
+		leave pong [animation="Fade Out"]
+		[end_timeline]

@@ -1,0 +1,33 @@
+[background arg="res://assets/screens/daythree.png" fade="3.0" wait="true"]
+[background arg="res://assets/locations/pati_room.png" fade="3.0" wait="true"]
+join pati right [animation="Bounce In"]
+pati (NeuronActivation): Was geht los darein
+pati (Neutral): Neuer Tag, neues Glück. Was geht los heute ab?
+- Lass heute über die GamingMachine2004 reden
+	set {Trust} += 20.0
+	pati (geeked): OOOOHHHH was! Was ein Zufall. Ich liebe es, über die GamingMachine2004 zu reden ( ⸝⸝´꒳`⸝⸝)
+	[style name="shy_small_font"]
+	pati (ShyBlush): Hey du...
+	[style name="test_style"]
+	pati (Blush): Wenn du da bist, ist alles eigentlich ganz okay...
+	pati (ShyBlush): Ich habe das Gefühl ich muss mich nicht verstellen..
+	pati (NeuronActivation): Wie fühlt es sich an, wenn man jemanden mag? Frage für ne Freundin (•⸝⸝⸝•꧞)
+	[clear time="1.0" music="false" background="false"]
+	leave pati [animation="Fade Out"]
+	[end_timeline]
+- Lass über das neue Poster von Mr Geist aus DoC WM4 reden
+	set {Trust} += 10.0
+	pati (Neutral): Oh.. naja.. können wir auch machen.. ich habe nichts dagegen
+	pati (ShyBlush): Hey du...
+	pati (ShyBlush): Ich find dich gar nicht so scheiße
+	pati (Blush): Kannst gerne öfter vorbeikommen (˵ •̀ ᴗ - ˵ ) ✧
+	[clear time="1.0" music="false" background="false"]
+	leave pati [animation="Fade Out"]
+	[end_timeline]
+- nasse Socken.
+	set {Trust} -= 20.0
+	pati (Angry): Da kannst du gerne mit Pong drüber reden.
+	pati (Angry): Du bist sogar für deine Verhältnisse ganz schön laut heute. Gerne abhauen! Liebe Grüße!
+	[clear time="1.0" music="false" background="false"]
+	leave pati [animation="Fade Out"]
+	[end_timeline]

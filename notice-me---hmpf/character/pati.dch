@@ -17,13 +17,58 @@
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"Neutral": {
+"Angry": {
 "export_overrides": {
-"image": "\"res://assets/placeholder2.png\""
+"image": "\"res://assets/pati assets/pati_disg..png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 0.9,
+"scale": 1.0,
+"scene": ""
+},
+"Blush": {
+"export_overrides": {
+"image": "\"res://assets/pati assets/pati_hmpf..png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"NeuronActivation": {
+"export_overrides": {
+"image": "\"res://assets/pati assets/pati_OHH.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Neutral": {
+"export_overrides": {
+"image": "\"res://assets/pati assets/pati_neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"ShyBlush": {
+"export_overrides": {
+"image": "\"res://assets/pati assets/pati_side..png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"geeked": {
+"export_overrides": {
+"image": "\"res://assets/pati assets/pati_100_mit_brille.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
 "scene": ""
 }
 },
