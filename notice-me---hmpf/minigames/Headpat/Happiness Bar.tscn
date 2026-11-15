@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dnnrcsol7msnn"]
+
+[ext_resource type="Script" uid="uid://bu77y6wo7siat" path="res://minigames/Headpat/happiness_bar.gd" id="1_x2u5h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2u5h"]
+bg_color = Color(0.87058824, 0.6117647, 0.72156864, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="HappinessBar" type="ProgressBar" unique_id=142544598]
+offset_left = 249.0
+offset_top = 450.0
+offset_right = 448.6882
+offset_bottom = 483.32
+scale = Vector2(3.3101606, 1.4705882)
+theme_override_styles/fill = SubResource("StyleBoxFlat_x2u5h")
+max_value = 1000.0
+show_percentage = false
+script = ExtResource("1_x2u5h")
