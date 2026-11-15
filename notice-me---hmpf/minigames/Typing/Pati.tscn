@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b4m5vqo1pt36a"]
+
+[ext_resource type="Script" uid="uid://kwkgsw5p2ns" path="res://minigames/Typing/pati.gd" id="1_31irp"]
+[ext_resource type="Texture2D" uid="uid://b3li3sd5gssqq" path="res://assets/pati assets/pati_neutral.png" id="2_pji1a"]
+[ext_resource type="Texture2D" uid="uid://ir5xa3rfoa5w" path="res://assets/pati assets/pati_100_mit_brille.png" id="3_0akbj"]
+[ext_resource type="Texture2D" uid="uid://hdev1nbdka65" path="res://assets/pati assets/pati_disg..png" id="4_ijswx"]
+
+[node name="Pati" type="Node2D" unique_id=716933661]
+scale = Vector2(2, 2)
+script = ExtResource("1_31irp")
+normal_texture = ExtResource("2_pji1a")
+right_texture = ExtResource("3_0akbj")
+wrong_texture = ExtResource("4_ijswx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1318088322]
+texture = ExtResource("2_pji1a")

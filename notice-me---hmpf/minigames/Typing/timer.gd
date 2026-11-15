@@ -10,9 +10,6 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	value -= 0.1
-	
-	if Input.is_action_just_pressed("ui_accept"):
-		reduce_timer()
 
 func reduce_timer():
 	value-= 2.5

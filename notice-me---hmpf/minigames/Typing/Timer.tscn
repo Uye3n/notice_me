@@ -12,7 +12,7 @@ corner_radius_bottom_left = 5
 [node name="Timer" type="ProgressBar" unique_id=799305497]
 offset_left = 52.0
 offset_top = 19.0
-offset_right = 1011.0
+offset_right = 916.0
 offset_bottom = 29.0
 theme_override_styles/fill = SubResource("StyleBoxFlat_iiyol")
 value = 100.0

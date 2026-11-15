@@ -1,5 +1,46 @@
 [gd_scene format=3 uid="uid://khvm5q2o8yib"]
 
+[ext_resource type="Texture2D" uid="uid://dmuyqwim8ok28" path="res://assets/locations/pati_room.png" id="1_kkpbr"]
+[ext_resource type="PackedScene" uid="uid://b4m5vqo1pt36a" path="res://minigames/Typing/Pati.tscn" id="2_kkpbr"]
+[ext_resource type="PackedScene" uid="uid://dxa1y200ly1m4" path="res://minigames/Typing/Timer.tscn" id="3_biq5o"]
+[ext_resource type="PackedScene" uid="uid://cwe0wv8etxcn" path="res://minigames/Typing/Pattern.tscn" id="4_uccyp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7hnut"]
+bg_color = Color(0.87058824, 0.6117647, 0.72156864, 0.7176471)
+
 [node name="Level" type="Node2D" unique_id=1335919534]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=988113420]
+[node name="Background" type="Sprite2D" parent="." unique_id=988113420]
+position = Vector2(575.5, 324)
+scale = Vector2(1.211579, 1.2919998)
+texture = ExtResource("1_kkpbr")
+
+[node name="Pati" parent="." unique_id=716933661 instance=ExtResource("2_kkpbr")]
+top_level = true
+position = Vector2(575, 581)
+scale = Vector2(3, 3)
+
+[node name="Timer" parent="." unique_id=799305497 instance=ExtResource("3_biq5o")]
+offset_left = 115.0
+offset_top = 60.0
+offset_right = 1074.0
+offset_bottom = 70.0
+
+[node name="Pattern" parent="." unique_id=468576237 instance=ExtResource("4_uccyp")]
+modulate = Color(0.9794176, 0.93366736, 0.9510506, 1)
+self_modulate = Color(0.8390233, 0.6123457, 0.45550227, 1)
+offset_left = 321.0
+offset_top = -23.0
+offset_right = 321.0
+offset_bottom = -23.0
+satz_1 = ["ICH", "WILL", "EINDATE"]
+
+[node name="End" type="Label" parent="." unique_id=795401335]
+visible = false
+offset_left = 413.0
+offset_top = 111.0
+offset_right = 587.0
+offset_bottom = 134.0
+scale = Vector2(2, 2)
+theme_override_styles/normal = SubResource("StyleBoxFlat_7hnut")
+text = "Deine Genauigkeit: 0%"
