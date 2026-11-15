@@ -1,4 +1,5 @@
-[background arg="res://assets/locations/pong_classroom.png" fade="0.0" wait="true"]
+[background arg="res://assets/screens/daytwo.png" fade="3.0" wait="true"]
+[background arg="res://assets/locations/pong_classroom.png" fade="3.0" wait="true"]
 join pong right [animation="Slide In Up"]
 pong (Neutral): H-Hey, du bist ja wieder da..
 pong (Shy): Was m-möchtest du heute machen?
@@ -9,7 +10,9 @@ pong (Shy): Was m-möchtest du heute machen?
 		set {Trust} -= 10.0
 		label unlustig
 		pong (Gulp): Oh.. ich fand das aber gar nicht lustig..... ich glaube, wir sollten das heute lassen. Geh bitte.
-		[end_timeline]
+		[clear time="1.0" music="false" background="false"]
+		leave pong [animation="Fade Out"]
+		jump pong3/
 	- Oh, ich finde einfach die Witze sehr originell und faszinierend
 		set {Trust} -= 20.0
 		jump unlustig
@@ -30,7 +33,9 @@ pong (Shy): Was m-möchtest du heute machen?
 		[style name="test_style"]
 		pong (Gulp): Ich hasse den Soundeffekt..... er hat mir nur Trauer und Leid gebracht....
 		pong (Gulp): Ich glaube, du solltest gehen..........
-		[end_timeline]
+		[clear time="1.0" music="false" background="false"]
+		leave pong [animation="Fade Out"]
+		jump pong3/
 - Ich wollte über den Goat MC BALLYHOO UND BIG TOP REDEN
 	set {Trust} += 20.0
 	[style name="excited_big_font"]
@@ -50,8 +55,6 @@ pong (Shy): Was m-möchtest du heute machen?
 		[style name="excited_big_font"]
 		pong (FullGeeked): PONG?
 		[style name="test_style"]
-		[signal arg="pong_minigame"]
-	- Seine wunderschönen Zähne
 		jump ballyhoo_glaze
 	- Sein Hut
 		pong (Gulp): Sein Hut? Das hat sich herzlos angehört.. Sein Hut hat auch einen Namen...
@@ -62,4 +65,6 @@ pong (Shy): Was m-möchtest du heute machen?
 			set {Trust} -= 10.0
 			pong (Gulp): Du kennst ihn ja gar nicht... jeder weiß, dass sein Hut Big Top heißt..........
 			pong (Gulp): Ich glaube... wir sollten das heute beenden..
-			[end_timeline]
+			[clear time="1.0" music="false" background="false"]
+			leave pong [animation="Fade Out"]
+			jump pong3/

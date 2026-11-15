@@ -25,13 +25,42 @@ pong: aber du siehst nicht danach aus, als würde dich das interessieren........
 - Ich mag deine Antenne aufm Kopf ♡( >ᴗ؂•̀ )
 	pong: Wa- wa- was? Wieso sollte ich... meine Antenne mögen *blush und wegschauen*
 join sophie rightmost [animation="Slide From Right" length="4.5"]
-sophie (Shy): (sophie stellt sich vor)
+[style name="shy_small_font"]
+sophie (Shy): h... h........ hi.....
+[style]
+sophie (Shy): ( •̯́ ₃ •̯̀)
+sophie (Shy): Mein Name ist Sophie...
+sophie (Shy): Aber das merkst du dir im Endeffekt wahrscheinlich eh nicht............
+[style name="shy_small_font"]
+sophie (Shy): Im Endeffekt redet im Endeffekt eh keiner mit mir........
+[style name="test_style"]
 join jen right [animation="Zoom In"]
-jen: (jen stellt sich vor)
+jen: (Wir tun so als hätten wir noch Zeit & Energie gehabt Jen zu adden (╥﹏╥))
 join pati left [animation="Bounce In"]
 pati: Yo ich bin Pati (֊⎚-⎚)
 "mr mysterious": Wowowowow, die Qual der Wahl, für wen entscheidest du dich für deinen ersten Talk? (¬ᴗ ´¬ )
+label choose
 - Pong
+	[clear time="1.0" music="false" background="false"]
+	leave pati [animation="Fade Out"]
+	leave jen [animation="Fade Out"]
+	leave pong [animation="Fade Out"]
+	leave sophie [animation="Fade Out"]
+	jump pong1/
 - Sophie
+	[clear time="1.0" music="false" background="false"]
+	leave pati [animation="Fade Out"]
+	leave jen [animation="Fade Out"]
+	leave pong [animation="Fade Out"]
+	leave sophie [animation="Fade Out"]
+	jump sophie1/
 - Jen
+	"mr mysterious": Hey..... wieso musst dus uns unter die Nase reiben (•⸝⸝⸝•꧞)
+	jump choose
 - Pati
+	[clear time="1.0" music="false" background="false"]
+	leave pati [animation="Fade Out"]
+	leave jen [animation="Fade Out"]
+	leave pong [animation="Fade Out"]
+	leave sophie [animation="Fade Out"]
+	jump pati1/

@@ -1,4 +1,5 @@
-[background arg="res://assets/locations/pong_classroom.png" fade="0.0" wait="true"]
+[background arg="res://assets/screens/dayone.png" fade="3.0" wait="true"]
+[background arg="res://assets/locations/pong_classroom.png" fade="3.0" wait="true"]
 join pong (Neutral) right [animation="Slide In Up"]
 pong (HalbGeeked): O- oh oh.. du bist ja wirklich zum Clubraum gekommen
 pong (Shy): Warum bist du hier?
@@ -24,7 +25,9 @@ label topic
 			[signal arg="pong_minigame"]
 		- Kirschen
 			pong (Gulp): Ouhhh, gut sieht anders aus.... da muss ich wohl los!
-			[end_timeline]
+			[clear time="1.0" music="false" background="false"]
+			leave pong [animation="Fade Out"]
+			jump pati2/
 	- Nah fuck no
 		set {Trust} -= 20.0
 		pong (Gulp): Oh... hmpf
@@ -46,8 +49,13 @@ label topic
 	- Das Hitgame Risiko
 		set {Trust} -= 20.0
 		pong (Gulp): Ew. Ich hasse Risiko. Es fühlt sich an, als wäre ich ein Adler, der versucht hat zu fliegen, den du versucht hast einzusperrt.
-		[end_timeline]
+		[clear time="1.0" music="false" background="false"]
+		leave pong [animation="Fade Out"]
+		jump pong2/
 - nasse Socken
 	set {Trust} -= 20.0
 	pong (Gulp): Wieso willst du über nasse Socken reden du Sohn.
 	pong (Gulp): Ich glaube du solltest gehen.
+	[clear time="1.0" music="false" background="false"]
+	leave pong [animation="Fade Out"]
+	jump pong2/
