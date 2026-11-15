@@ -31,15 +31,17 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "intro_sequence": "res://timelines/intro_sequence.dtl",
-"pong1": "res://timelines/pong1.dtl"
+"pong1": "res://timelines/pong1.dtl",
+"pong2": "res://timelines/pong2.dtl"
 }
 layout/style_directory={
 "": "res://styles/test_style.tres",
 "excited_big_font": "res://styles/excited_big_font.tres",
+"shy_small_font": "res://assets/locations/shy_small_font.tres",
 "test_style": "res://styles/test_style.tres"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://styles/test_style.tres", "res://styles/excited_big_font.tres"]
+layout/style_list=["res://styles/test_style.tres", "res://styles/excited_big_font.tres", "res://assets/locations/shy_small_font.tres"]
 layout/default_style="res://styles/test_style.tres"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
