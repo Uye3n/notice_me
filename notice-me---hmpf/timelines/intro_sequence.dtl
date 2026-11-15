@@ -2,6 +2,7 @@
 "mr mysterious": HALLIHALLO MEINE LIEBEN
 "mr mysterious": und willkommen
 "mr mysterious": zu unserem superkrassen Dating Game!! ᕙ(  •̀ ᗜ •́  )ᕗ
+audio "res://assets/audio/Goofy Spring Bounces - Sound Effect for editing.mp3" [loop="false"]
 "mr mysterious": hast du Bock? ( ᴗ̀ ̫ᴗ́ )
 label bock?
 - ja
@@ -40,6 +41,7 @@ join pati left [animation="Bounce In"]
 pati: Yo ich bin Pati (֊⎚-⎚)
 "mr mysterious": Wowowowow, die Qual der Wahl, für wen entscheidest du dich für deinen ersten Talk? (¬ᴗ ´¬ )
 label choose
+audio music "res://assets/audio/hoeheretoene_romantic_kurz.mp3" [loop="true"]
 - Pong
 	[clear time="1.0" music="false" background="false"]
 	leave pati [animation="Fade Out"]

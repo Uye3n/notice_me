@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cciega0wsijhl"
+path="res://.godot/imported/Jen bebebeb.wav-bce7ff9c71a5a365c7c2ae310621a431.sample"
+
+[deps]
+
+source_file="res://assets/audio/Jen bebebeb.wav"
+dest_files=["res://.godot/imported/Jen bebebeb.wav-bce7ff9c71a5a365c7c2ae310621a431.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

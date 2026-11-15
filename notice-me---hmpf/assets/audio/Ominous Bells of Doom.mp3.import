@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bfhwplc5bkoca"
+path="res://.godot/imported/Ominous Bells of Doom.mp3-360a8a2cd7a8f7ca3c8bd28ce241a8dd.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/Ominous Bells of Doom.mp3"
+dest_files=["res://.godot/imported/Ominous Bells of Doom.mp3-360a8a2cd7a8f7ca3c8bd28ce241a8dd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
