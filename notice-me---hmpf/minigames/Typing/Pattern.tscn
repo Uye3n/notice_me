@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cwe0wv8etxcn"]
+
+[ext_resource type="Script" uid="uid://c3w463v6hji71" path="res://minigames/Typing/pattern.gd" id="1_lye7h"]
+
+[node name="Pattern" type="Control" unique_id=468576237]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_lye7h")
+satz_1 = ["HIER", "KLEINER", "TEST"]
+satz_2 = ["TEST", "NUMMER", "ZWEI"]
+
+[node name="Label" type="Label" parent="." unique_id=1553016451]
+layout_mode = 0
+offset_left = 147.0
+offset_top = 138.0
+offset_right = 585.0
+offset_bottom = 161.0
+scale = Vector2(2, 2)
+text = "MAN SOLLTE SICH NICHT VON GEFÜHLEN LEITEN LASSEN"
+uppercase = true
