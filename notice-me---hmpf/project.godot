@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Dialogic="*uid://ds2q0uclmolvu"
 Ball="*uid://bk5lkpidx7cty"
+Main="*uid://xg1y2r8q6dyi"
 
 [dialogic]
 
@@ -39,7 +40,8 @@ directories/dtl_directory={
 "pong3": "res://timelines/pong3.dtl",
 "sophie1": "res://timelines/sophie1.dtl",
 "sophie2": "res://timelines/sophie2.dtl",
-"sophie3": "res://timelines/sophie3.dtl"
+"sophie3": "res://timelines/sophie3.dtl",
+"sophie_ending": "res://timelines/sophie_ending.dtl"
 }
 layout/style_directory={
 "": "res://styles/test_style.tres",
