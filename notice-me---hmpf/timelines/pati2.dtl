@@ -1,0 +1,27 @@
+[background arg="res://assets/locations/pati_room.png" fade="0.0" wait="true"]
+join pati (Neutral) right [animation="Bounce In"]
+pati (Neutral): Du bist ja schon wieder hier
+pati (Neutral): Über was willst du reden?
+- Über Personi 5?
+	set {Trust} += 20.0
+	pati (NeuronActivation): Hey gerne digga (≖ᴗ≖ ✿)
+	pati (Blush): Red ich gerne drüber digga (≖ᴗ≖ ✿)
+	pati (ShyBlush): Oh ich sehe, du hälst da was in der Hand. Was ist das? (≖ᴗ≖ ✿)
+	- Ich halte einen Plushie von Morgana
+		set {Trust} -= 10.0
+		pati (Angry): Ohh.. den mochte ich am Anfang echt gar nicht mal so sehr! ( °  ʖ °)╭∩╮
+		pati (NeuronActivation): Hättest du mir mal lieber nen Koromaru Plush geschenkt!
+		[end_timeline]
+	- Ich halte einen Plushie von Mr. Maruki
+		set {Trust} += 20.0
+		pati (geeked): WASSSSSSSSSS, woher wusstest du, dass ich Maruki mag!! Vielleicht doch nicht so schlimm, dass du da bist ( ◡̀  ̫ ◡́) ✧
+		[signal arg="pati_minigame"]
+- Über Liga der Legenden?
+	pati (Angry): Davon halte ich Abstand. Verschwende nicht meine Zeit. \
+	( ｡ •̀ ⤙ •́ ｡ )
+	pati (Angry): ...
+	[wait time="2.0"]
+	[style name="excited_big_font"]
+	pati (Angry): ...
+	[style name="test_style"]
+	pati (Angry): Ich habe dir nichts zu sagen. Lass mich allein.

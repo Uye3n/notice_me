@@ -32,6 +32,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "intro_sequence": "res://timelines/intro_sequence.dtl",
 "pati1": "res://timelines/pati1.dtl",
+"pati2": "res://timelines/pati2.dtl",
 "pong1": "res://timelines/pong1.dtl",
 "pong2": "res://timelines/pong2.dtl",
 "pong3": "res://timelines/pong3.dtl",
