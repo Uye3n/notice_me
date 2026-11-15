@@ -31,3 +31,35 @@ pong (Shy): Was m-möchtest du heute machen?
 		pong (Gulp): Ich hasse den Soundeffekt..... er hat mir nur Trauer und Leid gebracht....
 		pong (Gulp): Ich glaube, du solltest gehen..........
 		[end_timeline]
+- Ich wollte über den Goat MC BALLYHOO UND BIG TOP REDEN
+	set {Trust} += 20.0
+	[style name="excited_big_font"]
+	pong (FullGeeked): OMGOMGOMGOMGOMGOMGOMGOMGOMGOMGOMG ICH LIEBE IHN AUCH MIT DEM BABA GAME MARIO PARTY 8 AUF DER WII
+	[style name="test_style"]
+	pong (Hmpf): Wa- was genau magst du an ihm?
+	- Seine wunderschönen Augen
+		label ballyhoo_glaze
+		set {Trust} += 20.0
+		[style name="excited_big_font"]
+		pong (FullGeeked): KYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+		[style]
+		pong (Neutral): Das mag ich auch sehr an MC Ballyhoo und Big Top ദ്ദി (๑ᵔ⤙ᵔ๑)
+		label gerettet
+		pong (Shy): Wi- wir haben so viel gemeinsam y/n-kun
+		pong (HalbGeeked): Wollen wir gemeinsam Mario Party spielen... oder eine Runde...
+		[style name="excited_big_font"]
+		pong (FullGeeked): PONG?
+		[style name="test_style"]
+		[signal arg="pong_minigame"]
+	- Seine wunderschönen Zähne
+		jump ballyhoo_glaze
+	- Sein Hut
+		pong (Gulp): Sein Hut? Das hat sich herzlos angehört.. Sein Hut hat auch einen Namen...
+		- Ach ja, ich meine natürlich Big Top
+			pong (Hmpf): Ohh, ich dachte schon du wüsstest seinen Namen nicht \:3
+			jump gerettet
+		- Ach ja, natürlich meine ich Big Hat
+			set {Trust} -= 10.0
+			pong (Gulp): Du kennst ihn ja gar nicht... jeder weiß, dass sein Hut Big Top heißt..........
+			pong (Gulp): Ich glaube... wir sollten das heute beenden..
+			[end_timeline]

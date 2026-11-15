@@ -33,6 +33,7 @@ directories/dtl_directory={
 "intro_sequence": "res://timelines/intro_sequence.dtl",
 "pong1": "res://timelines/pong1.dtl",
 "pong2": "res://timelines/pong2.dtl",
+"pong3": "res://timelines/pong3.dtl",
 "sophie1": "res://timelines/sophie1.dtl",
 "sophie2": "res://timelines/sophie2.dtl",
 "sophie3": "res://timelines/sophie3.dtl"

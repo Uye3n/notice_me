@@ -1,0 +1,24 @@
+[background arg="res://assets/locations/pong_classroom.png" fade="0.0" wait="true"]
+join pong (Shy) right [animation="Slide In Up"]
+pong (Hmpf): Und hier bist du ja wieder ( ˶ˆᗜˆ˵ )
+pong (Hmpf): W-w-was fällt dir heute so ein?
+- Ich habe extra für dich eine nasse Socke gebracht
+	set {Trust} -= 20.0
+	pong (Gulp): Was... wieso tust du sowas..............
+	[end_timeline]
+- Ich hab dir ein Glas Pesto mitgebracht
+	set {Trust} += 20.0
+	pong (Shy): O-o-o-oh was? Woher wusstest du, dass ich Pesto mag? Ist es rotes oder grünes?
+	- Natürlich nur rotes für disch, das steht für Romantik
+		set {Trust} += 20.0
+		pong (FullGeeked): O-o-o-o-o-o-oh.. ich glaube, ich habe meinen Pesto Mate gefunden..... ( ˘͈ ᵕ ˘͈♡)
+		[style name="shy_small_font"]
+		pong (Shy): Ich muss dir etwas beichten.....
+		[style name="test_style"]
+		pong (Hmpf): I-i-i-i-ich habe mich in disch verliebt
+		[end_timeline]
+	- Natürlich nur grünes für disch, das steht für die Natur
+		set {Trust} -= 10.0
+		pong (Hmpf): ...
+		pong (Gulp): Ich glaube, das wird nichts...
+		pong (Gulp): Aber wir können gerne... später was machen
