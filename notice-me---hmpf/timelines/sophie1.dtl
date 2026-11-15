@@ -1,0 +1,31 @@
+[background arg="res://assets/locations/school_roof.png" fade="0.0" wait="true"]
+join sophie (Shy) rightmost [animation="Slide From Right" length="4.5"]
+sophie (Neutral): O-o-o-oh du... du bist ja hier.. sonst bin ich immer ganz... alleine mit meinen Gedanken
+sophie (Hmpf): Das ist das erste mal.. dass ich nicht alleine mit meinen Gedanken gelassen werde.........
+- Ich bin gerne alleine. Darum habe ich einen Stuhl und Tisch für mich selbst hier hingestellt.
+	sophie (Mr Anime): Du bist der erste, der meine dunkle Seite vertreibt
+- Wa-
+	[style name="excited_big_font"]
+	sophie (Suprice): Du bist alles, was mich auf dieser Welt hält
+	[style name="test_style"]
+sophie (Shy): Du bist der Grund, warum ich ich bin
+sophie (Neutral): Du bist das Licht in meinem Tunnel
+sophie (Mr Anime): Denkst du das gleiche?
+- Ja total..
+	set {Trust} += 60.0
+	[signal arg="sophie_minigame"]
+- Nein.
+	set {Trust} -= 20.0
+	sophie (Ew): oh..
+	[end_timeline]
+- Ich würde gerne mehr Zeit mit dir verbringen
+	sophie (Ew): O-o-o-o-o-okay, da-a-a-as verstehe ich... ich war zu voreilig.
+	sophie (Shy): Ich glaube... ich habe mich einfach ein bisschen mitreißen lassen von deiner.. Nettigkeit
+	sophie (Suprice): Das spüre ich nicht oft.
+	sophie (Mr Anime): Ich hoffe, ich kann dir mein wahres Ich zeigen. Hmm~
+	- Bitte lass mich dein wahres Ich sehen
+		set {Trust} += 20.0
+		[signal arg="sophie_minigame"]
+	- Nee, ich geh jetzt Ballermann hören, bzw. feiern
+		sophie (Ew): oh..
+		set {Trust} -= 10.0

@@ -1,0 +1,40 @@
+[background arg="res://assets/locations/school_roof.png" fade="0.0" wait="true"]
+join sophie (Shy) rightmost [animation="Slide From Right" length="4.5"]
+sophie (Neutral): Oh.. du auch wieder hier?
+sophie (Shy): Was machst du hier?
+- Ich wollte dich einfach sehen
+	sophie (Suprice): O-o-o-o-o-oh hihi hmmmm
+	sophie (Mr Anime): Sonst würde das keiner zu mir sagen.. du bist der allererste
+	- Natürlich.. wie könnte ich das nicht zu dir sagen
+		set {Trust} += 20.0
+		sophie (Suprice): Huiuiuiui *kekekeke*
+		sophie (Mr Anime): Wie kannst du sowas nur so schnell zu mir sagen (⸝⸝๑  ̫ ๑⸝⸝⸝)
+		sophie (Mr Anime): All die Jahre.... hab ich auf jemanden wie dich gewartet....
+		sophie (Shy): K-könnte ich dich um einen Gefallen bitten?
+		sophie (Shy): M-m-mein Herz würde extrem doki doki gehen, wenn du meinen Kopf streicheln könntest........
+		sophie (Mr Anime): ( ๑ ˃̵ᴗ˂̵)و ♡
+		[signal arg="sophie_minigame"]
+	- Lass über was anderes reden..
+		set {Trust} += 10.0
+		sophie (Neutral): O-oh.. über was möchtest du denn reden? Wie wärs mit Essen?
+		- Jaa super gerne, ich mag Wurst und habe dir Salamisticks mitgebracht!
+			set {Trust} += 20.0
+			sophie (Mr Anime): W-w-w-w-w-w-w-w-w-w-w-as... Woher... wusstest du, dass ich Salamisticks liebe? I-i-ich habe sogar ein Salamisticklager zu Hause
+			[style name="shy_small_font"]
+			sophie (Shy): ...
+			[style name="test_style"]
+			sophie (Mr Anime): In einer Welt voller Lärm bist du mein Lieblingslied
+			sophie (Mr Anime): Du bist der beste Zufall, der mir je passiert ist und meine liebste Entscheidung zugleich!
+			[signal arg="sophie_minigame"]
+		- Oh ja, ich hab dir zufälligerweise nen Karottenkuchen gemacht!
+			set {Trust} -= 20.0
+			[style name="excited_big_font"]
+			sophie (Ew): ...
+			[style]
+			sophie (Ew): Ich habe noch nie...
+			sophie (Ew): Sowas ekelhaftes erlebt...
+			sophie (Ew): Ich HASSE Karotten..... nun ist mein Tag wegen dir versaut.
+			[end_timeline]
+- Ich wollte nur frische Luft schnappen
+	sophie (Hmpf): Oh.. na gut..
+	[end_timeline]
