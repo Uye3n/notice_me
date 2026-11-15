@@ -6,6 +6,7 @@ signal move
 @export var speed = 250
 var direction_x = 0
 var direction_y = 0
+var collision = Vector2(0, 0)
 
 # Reset ball's position and velocity
 func start():
@@ -30,7 +31,7 @@ func _physics_process(delta):
 		
 	move.emit()
 	
-	var collision = move_and_collide(velocity * delta)
+	collision = move_and_collide(velocity * delta)
 	if collision:
 		velocity = velocity.bounce(collision.get_normal())
 		

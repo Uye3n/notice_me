@@ -7,12 +7,13 @@ var target_pos = 0
 
 func _ready():
 	add_to_group("paddles")
+	Ball.move.connect(_on_move)
 	
 func _physics_process(delta):
 	var direction = 0
 
 	if Ball.direction_x > 0:
-		Ball.move.connect(_on_move)
+		target_pos = Ball.position.y
 	else:
 		target_pos = get_viewport_rect().size.y / 2
 	
