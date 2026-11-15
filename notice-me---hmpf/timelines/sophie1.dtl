@@ -1,5 +1,6 @@
 [background arg="res://assets/locations/school_roof.png" fade="0.0" wait="true"]
 join sophie (Shy) right [animation="Slide From Right" length="4.0"]
+[end_timeline]
 sophie (Neutral): O-o-o-oh du... du bist ja hier.. sonst bin ich immer ganz... alleine mit meinen Gedanken
 sophie (Hmpf): Das ist das erste mal.. dass ich nicht alleine mit meinen Gedanken gelassen werde.........
 - Ich bin gerne alleine. Darum habe ich einen Stuhl und Tisch für mich selbst hier hingestellt.
