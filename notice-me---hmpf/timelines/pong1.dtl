@@ -22,6 +22,7 @@ label topic
 		- Zitronen
 			set {Trust} += 20.0
 			pong (HalbGeeked): Ich wette auch immer auf Zitronen!! \:3
+			leave pong [animation="Fade Out"]
 			[signal arg="pong_minigame"]
 		- Kirschen
 			pong (Gulp): Ouhhh, gut sieht anders aus.... da muss ich wohl los!
@@ -45,6 +46,7 @@ label topic
 		[style name="shy_small_font"]
 		pong (Shy): H- haha.. was war das denn....
 		[style name="test_style"]
+		leave pong [animation="Fade Out"]
 		[signal arg="pong_minigame"]
 	- Das Hitgame Risiko
 		set {Trust} -= 20.0

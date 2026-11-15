@@ -14,6 +14,7 @@ sophie (Shy): Was machst du hier?
 		sophie (Shy): K-könnte ich dich um einen Gefallen bitten?
 		sophie (Shy): M-m-mein Herz würde extrem doki doki gehen, wenn du meinen Kopf streicheln könntest........
 		sophie (Mr Anime): ( ๑ ˃̵ᴗ˂̵)و ♡
+		leave sophie [animation="Fade Out"]
 		[signal arg="sophie_minigame"]
 	- Lass über was anderes reden..
 		set {Trust} += 10.0
@@ -26,6 +27,7 @@ sophie (Shy): Was machst du hier?
 			[style name="test_style"]
 			sophie (Mr Anime): In einer Welt voller Lärm bist du mein Lieblingslied
 			sophie (Mr Anime): Du bist der beste Zufall, der mir je passiert ist und meine liebste Entscheidung zugleich!
+			leave sophie [animation="Fade Out"]
 			[signal arg="sophie_minigame"]
 		- Oh ja, ich hab dir zufälligerweise nen Karottenkuchen gemacht!
 			set {Trust} -= 20.0

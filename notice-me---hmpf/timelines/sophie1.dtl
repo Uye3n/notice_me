@@ -14,6 +14,7 @@ sophie (Neutral): Du bist das Licht in meinem Tunnel
 sophie (Mr Anime): Denkst du das gleiche?
 - Ja total..
 	set {Trust} += 60.0
+	leave sophie [animation="Fade Out"]
 	[signal arg="sophie_minigame"]
 - Nein.
 	set {Trust} -= 20.0
@@ -28,6 +29,7 @@ sophie (Mr Anime): Denkst du das gleiche?
 	sophie (Mr Anime): Ich hoffe, ich kann dir mein wahres Ich zeigen. Hmm~
 	- Bitte lass mich dein wahres Ich sehen
 		set {Trust} += 20.0
+		leave sophie [animation="Fade Out"]
 		[signal arg="sophie_minigame"]
 	- Nee, ich geh jetzt Ballermann hören, bzw. feiern
 		set {Trust} -= 10.0

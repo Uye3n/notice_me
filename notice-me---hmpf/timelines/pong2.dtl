@@ -25,6 +25,7 @@ pong (Shy): Was m-möchtest du heute machen?
 		pong (FullGeeked): W-w-w-was? Ich liebe das Video von M&Jmetal!!
 		pong (HalbGeeked): Wi-wir haben so viel gemeinsam y/n-kun
 		pong (Shy): Wollen wir das Video gemeinsam schauen?
+		leave pong [animation="Fade Out"]
 		[signal arg="pong_minigame"]
 	- Ein Video mit dem ominous Bell of Doom Soundeffect
 		set {Trust} -= 20.0
