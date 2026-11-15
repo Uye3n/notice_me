@@ -1,5 +1,5 @@
 [background arg="res://assets/locations/school_roof.png" fade="0.0" wait="true"]
-join sophie (Shy) right [animation="Slide From Right" length="4.0"]
+join sophie (Shy) rightmost [animation="Slide From Right" length="4.5"]
 sophie (Neutral): Oh.. du auch wieder hier?
 sophie (Shy): Was machst du hier?
 - Ich wollte dich einfach sehen

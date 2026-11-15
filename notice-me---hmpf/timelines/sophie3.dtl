@@ -1,0 +1,21 @@
+[background arg="res://assets/locations/school_roof.png" fade="0.0" wait="true"]
+join sophie rightmost [animation="Slide From Right" length="4.5"]
+sophie (Neutral): A-a-a-ach.. da bist du ja wieder
+sophie (Shy): Ü-ü-über welche Sachen möchtest du heute reden?
+- Pferde
+	set {Trust} += 20.0
+	sophie (Mr Anime): O-o-o-o-o-o-o-o-o-h- ich liebe diese kreaturen.. sie spiegeln mein innerliches Verlangen IN DIE FREIHEIT
+	label confession
+	sophie (Mr Anime): I-i-i-i-ich merke immer mehr, wie ich dich mag...
+	- Mit dir fühlt sich selbst das größte Chaos plötzlich ganz leise und machbar an
+		set {Trust} += 20.0
+		[end_timeline]
+	- Mit dir würde ich die ganze Nacht Ballermann hören
+		[end_timeline]
+- Kpop
+	set {Trust} += 10.0
+	sophie (Suprice): O-o-o-o-o-omg.. omg- kennst du BTS? Die haben mich aus der dunkelsten Zeit rausgeholt
+	jump confession
+- Radioaktive Smismis
+	set {Trust} -= 20.0
+	sophie (Ew): O-o-o-o-oh.. bitte nicht...........
