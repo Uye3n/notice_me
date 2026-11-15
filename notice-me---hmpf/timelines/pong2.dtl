@@ -1,0 +1,33 @@
+[background arg="res://assets/locations/pong_classroom.png" fade="0.0" wait="true"]
+join pong right [animation="Slide In Up"]
+pong (Neutral): H-Hey, du bist ja wieder da..
+pong (Shy): Was m-möchtest du heute machen?
+- Ich habe hier ein Witzebuch über kleine Leute. ich wollte dir ein paar Witze erzählen
+	set {Trust} -= 20.0
+	pong (Gulp): Oh... wieso findest du sowas witzig?
+	- Ich musste bei den Witzen an dich denken ദ്ദി ˉ͈̀꒳ˉ͈́ )✧
+		set {Trust} -= 10.0
+		label unlustig
+		pong (Gulp): Oh.. ich fand das aber gar nicht lustig..... ich glaube, wir sollten das heute lassen. Geh bitte.
+		[end_timeline]
+	- Oh, ich finde einfach die Witze sehr originell und faszinierend
+		set {Trust} -= 20.0
+		jump unlustig
+- Ich möchte dir gerne ein MeTube Video zeigen
+	set {Trust} += 20.0
+	pong (Hmpf): Ohh.. warum... denkst du, ich würde das mit dir schauen? Hmpf
+	pong (Shy): Was möchtest du mir denn zeigen?
+	- Ein Video über nen random guy, der Pepsi und Hot Sauce zusammenmischt
+		set {Trust} += 10.0
+		pong (FullGeeked): W-w-w-was? Ich liebe das Video von M&Jmetal!!
+		pong (HalbGeeked): Wi-wir haben so viel gemeinsam y/n-kun
+		pong (Shy): Wollen wir das Video gemeinsam schauen?
+		[signal arg="pong_minigame"]
+	- Ein Video mit dem ominous Bell of Doom Soundeffect
+		set {Trust} -= 20.0
+		[style name="excited_big_font"]
+		pong (Gulp): . . .
+		[style name="test_style"]
+		pong (Gulp): Ich hasse den Soundeffekt..... er hat mir nur Trauer und Leid gebracht....
+		pong (Gulp): Ich glaube, du solltest gehen..........
+		[end_timeline]
