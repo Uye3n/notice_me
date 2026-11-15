@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cykclikfve6ey"]
+
+[ext_resource type="Texture2D" uid="uid://b2xv0qulv758c" path="res://assets/locations/school_roof.png" id="1_g5xf6"]
+[ext_resource type="Script" uid="uid://yg36r8ddodan" path="res://minigames/Headpat/level.gd" id="1_ls4my"]
+[ext_resource type="PackedScene" uid="uid://cfgk703qy3265" path="res://minigames/Headpat/Timer.tscn" id="2_2sden"]
+[ext_resource type="PackedScene" uid="uid://dnnrcsol7msnn" path="res://minigames/Headpat/Happiness Bar.tscn" id="3_4n1vn"]
+[ext_resource type="PackedScene" uid="uid://bplh7byx0fxn1" path="res://minigames/Headpat/shy_sophie.tscn" id="4_2sden"]
+[ext_resource type="PackedScene" uid="uid://hd4v6uaol2te" path="res://minigames/Headpat/Hand.tscn" id="5_4n1vn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_07orm"]
+bg_color = Color(0.87058824, 0.6117647, 0.72156864, 0.52156866)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+
+[node name="Level" type="Node2D" unique_id=1516220234]
+script = ExtResource("1_ls4my")
+
+[node name="SchoolRoof" type="Sprite2D" parent="." unique_id=604509108]
+position = Vector2(575, 323.49997)
+scale = Vector2(0.8968751, 0.8902777)
+texture = ExtResource("1_g5xf6")
+
+[node name="HappinessBar" parent="." unique_id=142544598 instance=ExtResource("3_4n1vn")]
+top_level = true
+offset_left = 261.0
+offset_top = 479.0
+offset_right = 460.68823
+offset_bottom = 512.32
+
+[node name="Timer" parent="." unique_id=1446585456 instance=ExtResource("2_2sden")]
+offset_left = 285.0
+offset_top = 34.0
+offset_right = 900.0
+offset_bottom = 41.0
+
+[node name="ShySophie" parent="." unique_id=1935557334 instance=ExtResource("4_2sden")]
+position = Vector2(598, 599)
+
+[node name="Hand" parent="." unique_id=1484700797 instance=ExtResource("5_4n1vn")]
+position = Vector2(677, 270)
+
+[node name="Result" type="Label" parent="." unique_id=1476415886]
+visible = false
+offset_left = 208.0
+offset_top = 54.0
+offset_right = 619.0
+offset_bottom = 77.0
+scale = Vector2(2, 2)
+theme_override_styles/normal = SubResource("StyleBoxFlat_07orm")
+text = "Sophie bekommt vor Freude kein Wort mehr heraus!!"
