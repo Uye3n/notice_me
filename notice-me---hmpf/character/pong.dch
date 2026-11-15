@@ -17,9 +17,54 @@
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
+"FullGeeked": {
+"export_overrides": {
+"image": "\"res://assets/pong assets/pong_anime100.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"Gulp": {
+"export_overrides": {
+"image": "\"res://assets/pong assets/pong_disg.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"HalbGeeked": {
+"export_overrides": {
+"image": "\"res://assets/pong assets/pong_anime.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"Hmpf": {
+"export_overrides": {
+"image": "\"res://assets/pong assets/pong_hmpfl.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
 "Neutral": {
 "export_overrides": {
-"image": "\"res://assets/placeholder2.png\""
+"image": "\"res://assets/pong assets/pong_neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.9,
+"scene": ""
+},
+"Shy": {
+"export_overrides": {
+"image": "\"res://assets/pong assets/pong_side.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
