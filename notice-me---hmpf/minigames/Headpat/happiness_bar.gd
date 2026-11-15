@@ -11,5 +11,5 @@ func _process(_delta: float) -> void:
 		update_progress_bar()
 
 func update_progress_bar():
-	value += 15
+	value += 50
 	print(value)

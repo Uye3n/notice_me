@@ -1,4 +1,4 @@
-[background arg="res://assets/locations/school_roof.png" fade="0.0" wait="true"]
+[background arg="res://assets/locations/clubraumsophieNEW.png" fade="0.0" wait="true"]
 join sophie (Mr Anime) right [animation="Slide From Right" length="4.5"]
-sophie (Mr Anime): bitte
+sophie (Mr Anime): hier könnte ihr ending stehen
 do Main.quit()

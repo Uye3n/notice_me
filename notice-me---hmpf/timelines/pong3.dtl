@@ -1,5 +1,5 @@
 [background arg="res://assets/screens/daythree.png" fade="3.0" wait="true"]
-[background arg="res://assets/locations/pong_classroom.png" fade="3.0" wait="true"]
+[background arg="res://assets/locations/clubraumpongNEW.png" fade="3.0" wait="true"]
 join pong (Shy) right [animation="Slide In Up"]
 pong (Hmpf): Und hier bist du ja wieder ( ˶ˆᗜˆ˵ )
 pong (Hmpf): W-w-was fällt dir heute so ein?
