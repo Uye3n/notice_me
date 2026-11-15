@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cfgk703qy3265"]
+
+[ext_resource type="Script" uid="uid://s2mbpcobc0m8" path="res://minigames/Headpat/timer.gd" id="1_sr06j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_07orm"]
+bg_color = Color(0.60784316, 0.8156863, 0.49019608, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="Timer" type="ProgressBar" unique_id=1446585456]
+offset_left = 48.0
+offset_top = 29.0
+offset_right = 678.0
+offset_bottom = 36.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_07orm")
+value = 100.0
+show_percentage = false
+script = ExtResource("1_sr06j")
