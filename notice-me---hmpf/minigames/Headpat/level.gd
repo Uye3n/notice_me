@@ -22,10 +22,10 @@ func _process(_delta: float) -> void:
 
 func check_win_cond():
 	if progr_bar.value == 1000 and timer.value != 0:
-		get_tree().paused = true
+		timer.set_process(false)
 		return true
 
 func check_losing_cond():
 	if timer.value == 0:
-		get_tree().paused = true
+		timer.set_process(false)
 		return true
