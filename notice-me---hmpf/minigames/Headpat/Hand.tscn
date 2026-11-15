@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://hd4v6uaol2te"]
+
+[ext_resource type="Script" uid="uid://dj5pqml48yyfy" path="res://minigames/Headpat/hand.gd" id="1_n86lq"]
+[ext_resource type="Texture2D" uid="uid://ce5r4hdsg3ghp" path="res://minigames/Headpat/assets/hand.png" id="1_ps3d0"]
+
+[node name="Hand" type="Node2D" unique_id=1484700797]
+script = ExtResource("1_n86lq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=771545126]
+scale = Vector2(1.3, 1)
+texture = ExtResource("1_ps3d0")
