@@ -15,6 +15,13 @@ func _process(_delta: float) -> void:
 	if check_win_cond():
 		win_label.show()
 		sopi_sprite.set_winning_texture()
+		
+		set_process(false) 
+		select_timeline()
+		#f Main.sophie_minigame_count == 2:
+			#elect_timeline()
+		print("nach label zeug")
+		
 	elif check_losing_cond():
 		win_label.text = "Eine einsame Träne läuft Sophies Wange entlang..."
 		win_label.show()
@@ -29,3 +36,18 @@ func check_losing_cond():
 	if timer.value == 0:
 		timer.set_process(false)
 		return true
+
+			
+func select_timeline():
+	match Main.sophie_minigame_count:
+		0:
+			Main.sophie_minigame_count += 1
+			Dialogic.start("sophie2")
+		1:
+			Main.sophie_minigame_count += 1
+			Dialogic.start("sophie3")
+			await Dialogic.timeline_ended
+			Dialogic.start("sophie_ending")
+		_:
+			Dialogic.start("sophie_ending")
+			
